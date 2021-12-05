@@ -15,17 +15,12 @@ try:
     browser = webdriver.Chrome()
     browser.get(link)
 
-    priceLabel = WebDriverWait(browser, 5).until(
+    priceLabel = WebDriverWait(browser, 10).until(
         EC.text_to_be_present_in_element((By.ID, "price"), "$100")
     )
 
     bookButton = browser.find_element_by_id('book')
     bookButton.click()
-
-    '''
-    new_window = browser.window_handles[1]
-    browser.switch_to.window(new_window)
-    '''
 
     x_element = browser.find_element_by_css_selector("#input_value")
     x = x_element.text
