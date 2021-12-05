@@ -1,3 +1,3 @@
 # Stepik-Autotests-course
 
-https://stepik.org/course/575/promo
+Link to the course: https://stepik.org/course/575/promo
